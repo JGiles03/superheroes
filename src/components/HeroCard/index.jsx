@@ -18,7 +18,7 @@ export default function HeroCard ({ hero }) {
             
             <h2>{hero.name}</h2>
             <img src={hero.images.md}></img>
-            <button onClick={addToTeam} >Add to team</button>
+            <button onClick={addToTeam} >Go to hero's page</button>
             {/* make button looked clicked if hero is in team list */}
             
         </div>
