@@ -18,6 +18,7 @@ const App = () => {
               <Route path="/heroes" element={<HeroesPage />} />
               <Route path="/heroes/:id" element={<HeroPage />} />
               <Route path="/team" element={<TeamPage />} />
+              <Route path="/team/:id" element={<HeroPage />} />
             </Route>
           </Routes>
         </SelectedProvider>
