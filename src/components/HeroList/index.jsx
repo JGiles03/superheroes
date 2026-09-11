@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 import { HeroCard } from '../';
 import { useHero } from "../../contexts";
+import { Link } from 'react-router-dom';
 
-export default function ShowList() {
+export default function HeroList() {
 
     const { heroData } = useHero();
-    function renderShows() {
-        return heroData
-        .map(hero => hero.images.md ? <HeroCard key={hero.id} hero={hero} /> : "")
-    }
-
 
     return (
         <>
-        {renderShows()}
+        {heroData
+        .map(hero => hero.images.md ? <Link to={`${hero.id}`} key={hero.id}><HeroCard key={hero.id} hero={hero} /></Link> : "")}
         </>
     );
 }

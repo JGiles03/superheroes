@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { SearchBar, HeroCard } from "../";
 import { useHero } from "../../contexts";
+import { Link } from "react-router-dom";
 
 export default function SearchWidget() {
     
@@ -23,11 +24,11 @@ export default function SearchWidget() {
     function handleSearch(userInput) {
         setSearchString(userInput)
     }
-    
+
     return (
         <>
             <SearchBar lastSearch={searchString} handleSearch={handleSearch}/>
-            {heroData.images ? <HeroCard hero={heroData} /> : <></> }
+            {heroData.images ? <Link to={`${heroData.id}`} key={heroData.id}><HeroCard hero={heroData} /></Link> : <></> }
         </>
     );
 }

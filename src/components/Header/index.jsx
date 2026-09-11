@@ -6,9 +6,10 @@ export default function Header() {
 	<div className="screen">
 		<header>
 			<nav className="navbar">
-                <h1> Superheroes</h1>
+                <h1> Justice Squad</h1>
 				<NavLink className="nav-links" to="/">Home</NavLink>
                 <NavLink className="nav-links" to="/heroes">Heroes</NavLink>
+                <NavLink className="nav-links" to="/team">Team</NavLink>
                 <NavLink className="nav-links" to="/search">Search</NavLink>
 			</nav>
 		</header>
