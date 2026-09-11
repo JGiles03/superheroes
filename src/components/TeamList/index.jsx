@@ -7,7 +7,7 @@ export default function TeamList() {
     const {teamData} = useTeam()
 
     return (
-        <div>
+        <div className="teamlist">
             {teamData.map(hero => hero.images.md ? <TeamHeroCard key={hero.id} hero={hero} /> : "")}
         </div>
     )

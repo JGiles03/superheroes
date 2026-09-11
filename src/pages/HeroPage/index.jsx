@@ -5,7 +5,9 @@ export default function SearchPage() {
   return (
     <div className="page"> 
         <h1>List of Heroes</h1>
-        <AllHeroes />
+        <div className="herolist">
+          <AllHeroes />
+        </div>
     </div>
   )
 }
