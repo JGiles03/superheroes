@@ -1,1 +1,2 @@
-export { useHero, HeroProvider } from './HeroProvider'
+export { useHero, HeroProvider } from "./HeroProvider"
+export { useTeam, TeamProvider } from "./TeamProvider"
